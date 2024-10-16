@@ -8,7 +8,7 @@ const GameData = () => {
     useEffect(() => {
         const fetchGames = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/games');
+                const response = await axios.get('https://game-backend-94pp.onrender.com');
                 setGames(response.data);
             } catch (error) {
                 console.error('Error fetching games:', error);

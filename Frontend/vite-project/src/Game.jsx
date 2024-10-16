@@ -36,7 +36,7 @@ const Game = () => {
     const saveGame = async () => {
         const winner = calculateFinalWinner();
         const gameData = { player1, player2, rounds, winner };
-        await axios.post('http://localhost:5000/api/games', gameData);
+        await axios.post('https://game-backend-94pp.onrender.com', gameData);
     };
 
     const calculateFinalWinner = () => {
