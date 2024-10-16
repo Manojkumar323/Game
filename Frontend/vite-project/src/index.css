@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  display: flex;                
+  flex-direction: column;      
+  align-items: center;          
+  min-height: 100vh;           
+}
+
+nav {
+  display: flex;
+     
+  margin-bottom: 20px;         
+}
+
+nav a {
+  margin: 0 15px;              
+  text-decoration: none;        
+  color: #007bff;              
+}
+
+h1 {
+ 
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(50% - 22px);
+  text-align: center;        
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.rounds {
+  margin-top: 20px;
+}
+
+.rounds p {
+  margin: 5px 0;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.winner {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+.game-data-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Player Section */
+.player-section {
+  margin: 20px 0;
+  text-align: center;          
+}
+
+/* Round Details */
+.round {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+/* Winner Highlight */
+strong {
+  color: #007bff;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .game-data-container {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  .round {
+      font-size: 14px;
+  }
+}
